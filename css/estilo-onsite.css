@@ -1,0 +1,45 @@
+:root {
+    /* definir paleta */
+    --blanco: #ffffff;
+    --texto: #444444;
+    --ppal-fuerte:  #5E6472;
+    --ppal-medio: #AED9E0;
+    --ppal-suave: #B8F2E6;
+    --contraste-suave: #FAF3DD;
+    --contraste-fuerte: #FFA69E;   
+
+}
+
+/* fonts 
+font-family: 'Bebas Neue', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+
+* {
+    margin: 0;
+
+}
+
+/* UTILIDADES */
+
+.centrar {
+    text-align: center;
+
+}
+
+.contenedro {
+    width: 760px;
+
+}
+
+/* GLOBALES */
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
