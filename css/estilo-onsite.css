@@ -25,6 +25,7 @@ font-family: 'Roboto', sans-serif;
 h1, 
 h2, 
 h3 {
+    background-color: rgb(244, 224, 123);
     text-align: center;
     padding: 10px;
     font-family: 'Bebas Neue', cursive;
@@ -38,7 +39,53 @@ a {
 
 /* UTILIDADES */
 
-
+.container {
+    
+    background-color: #FAF3DD; 
+    display:grid; 
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    font-size: 1.5rem; }
+.servicios {
+    grid-template-rows: 30% 30% 30%;
+    padding: 5%;
+    display: flex;
+}
+.planes { 
+    background-color: #FAF3DD;
+    display: flex; 
+    justify-content: center;
+    font-size: 1.5rem;}
+.plan1 {
+    margin: 1%;
+    background-color: #AED9E0;
+    border-radius: 4%;
+    width: 20%; 
+}
+.plan2 {
+    margin: 1%;
+    background-color:#B8F2E6;
+    border-radius: 4%;
+    width: 20%;
+}
+.plan3 {
+    margin: 1%;
+    background-color: #FFA69E;
+    border-radius: 4%;
+    width: 20%;
+}
+.tituloPlan {
+    text-align: center;
+    padding: 5%;
+    font-size: 40px;
+}
+.lineaPlan {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.textoPlan {
+    margin: 10%;
+}
 .contenedor {
     /* ancho de contenido + centrado */
     width: 760px;
