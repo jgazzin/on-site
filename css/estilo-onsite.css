@@ -133,16 +133,14 @@ h3 {
 
 /* UTILIDADES */
 
-/* FLOR - TRABAJANDO ANDO - FLOR - TRABAJANDO ANDO - FLOR - TRABAJANDO ANDO -*/
+/* - FLOR - SERVICIOS & PLANES - FLOR - SERVICIOS & PLANES - FLOR - SERVICIOS & PLANES - FLOR - SERVICIOS & PLANES */
 
-.grid-container {
-    background-color: #FFFFFF; 
+.grid-container { 
     display:grid; 
     grid-template-columns: 20% 20% 20%;
     grid-template-rows:15% 15% 15%; ;
     justify-content: center;
-    padding-bottom: 2.5%;
-    
+    padding-bottom: 2.5%;  
 }
 
 .servicios {
@@ -156,9 +154,11 @@ h3 {
     padding-top: 8%; 
     margin-left: 2%;
 }
+
 .iconosServ img {
     width: 4rem;
 }
+
 
 button{
     font-size: 0.75rem;
@@ -202,13 +202,13 @@ button:hover {
 
 
 #plan1{
-    background-color: aliceblue;
+    background-color:var(--ppal-suave);
 }
 #plan2{
-    background-color: rgb(77, 205, 201);
+    background-color: var(--ppal-medio);
 }
 #plan3{
-    background-color: rgb(34, 92, 143);
+    background-color: var(--contraste-suave);
 }
 
 
@@ -245,12 +245,11 @@ button:hover {
     }
     #plan3{
          background-color: var(--contraste-suave);
-
     }
    
 }
 
-/* FLOR - HASTA ACÁ LLEGÓ MI AMOR */
+/* - FLOR - SERVICIOS & PLANES - FLOR - SERVICIOS & PLANES - FLOR - SERVICIOS & PLANES - FLOR - SERVICIOS & PLANES - FLOR - SERVICIOS & PLANES */
 
 .contenedor {
     /* ancho de contenido + centrado */
