@@ -137,8 +137,7 @@ h3 {
 
 .grid-container { 
     display:grid; 
-    grid-template-columns: 20% 20% 20%;
-    grid-template-rows:15% 15% 15%; ;
+    grid-template-columns: 25% 25% 25%;
     justify-content: center;
     padding-bottom: 2.5%;  
 }
@@ -159,7 +158,6 @@ h3 {
     width: 4rem;
 }
 
-
 button{
     font-size: 0.75rem;
     font-weight: bold;
@@ -176,7 +174,7 @@ button:hover {
 }
 
 #nuestrosPlanes {
-    max-width: 1400px;
+    width: 80%;
     margin: auto;
 }
 
@@ -186,14 +184,11 @@ button:hover {
 
 #nuestrosPlanes div {
     padding: 5px 12px;
-}
-
-#nuestrosPlanes h3 {
-    margin: 0;
+    width: 30%;
 }
 
 #nuestrosPlanes .plan{
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     padding: 50px 0px;
     margin: 30px;
@@ -202,7 +197,7 @@ button:hover {
 
 
 #plan1{
-    background-color:var(--ppal-suave);
+    background-color: var(--ppal-suave);
 }
 #plan2{
     background-color: var(--ppal-medio);
@@ -219,8 +214,7 @@ button:hover {
     }
     .servicios {
         text-align: center;
-        grid-column:1 / span3;
-        
+        grid-column:1 / span3;        
     }
     .servicios h4{
         font-size: 20px;
@@ -228,7 +222,6 @@ button:hover {
 }
 
 @media(min-width:720px){
-
 
     #nuestrosPlanes {
         display: flex;
