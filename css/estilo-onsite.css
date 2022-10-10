@@ -349,7 +349,6 @@ button:hover {
     
   }
 
-  #footer{
-    forced-color-adjust: value(--ppal-fuerte);
-    color:#444444
+  .fa-brands{
+    color:#444444;
   }
