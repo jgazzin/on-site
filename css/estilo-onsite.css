@@ -59,77 +59,106 @@ h3 {
 }
 
 
+/* ELIAS DESDE ACÁ |||||||||| header |||||| */
 
-/* METIENDO MANOPLA ELIAS DESDE ACÁ*/
-/* METIENDO MANOPLA ELIAS DESDE ACÁ*/
-
-
-
-.headerelias {
-    display: flex;
-    margin: 1px;
-    flex-flow: row nowrap;
-    width: 100%;
+.site-header {
+    background-color: var(--blanco);
     height: 120px;
-    align-content: flex-end;
-    gap: 4px 4px;
-    background-color: var(--ppal-fuerte);
-    align-items: auto;
-}
-  
-  .elem {
-    width: 33%;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: all 300ms;
     
   }
+ .site-header a {
+    text-decoration: none;
+    color: var(--ppal-fuerte);
+    font-weight: 700;
+    transition: all 300ms;
+  }
+  .site-header a:hover {
+    text-decoration: none;
+    color: #1F8AFF;
+    transition: all 300ms;
+  }
+  .site-header:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: all 300ms;
+  }
 
-   
-/*-----------MENU NAV --------------*/
-
-#menu {
-    margin:auto;
-    padding-left:10px;
-    padding-top:5px;   
-    height:25px;
-    width: 60%;
-    
-}
-#menu ul{
-    list-style:none; 
-    margin:0px; 
-    padding:0px;
-}
-#menu ul li {
-    float:left;
-    padding-left:10px;
-    padding-right:10px;
-    border-right:1px solid #FFFFFF;
-}
-#menu ul li a{
-    text-decoration:none;
-    color:#CCCCCC;
-    font-weight:bold;
-}
-#menu ul li a:hover{
-    color:#FFA69E;
-}
-
-.footer{
-
+  .site-header__wrapper {
     display: flex;
-    margin: 1px;
-    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+ 
+  /* |||||| BOTÓN FLOTANTE ||||||||||| */
+
+  #btn-volver{
+    margin-top: 10%;
+  }
+  
+  .table-confirmacion  {border-collapse:collapse;border-spacing:0; margin: 50px 0;}
+  .table-confirmacion td{border:none;font-size:16px;
+    overflow:hidden;padding:10px 5px;word-break:normal;}
+  .table-confirmacion .table-confirmacion-zv4m{text-align:left;vertical-align:top; font-weight:600}
+  .table-confirmacion .table-confirmacion-ofj5{text-align:right;vertical-align:top}
+  
+
+  #botones-fixed{
+    position:fixed;
+    bottom: 4%;
+    left: 0;
+    height: 10%;
     width: 100%;
-    height: 120px;
-    align-content: flex-end;
-    gap: 4px 4px;
-    background-color: #5E6472;
-    align-items: auto;
-    color: #FAF3DD;
+    z-index: 999;
+  }
+  
+  #icono-wp{
+    position:absolute;
+    width: 3rem;
+    bottom: 4%;
+    right: 3%;
+    transition: .2s ease;
+  }
+  
+  #icono-wp:hover{
+    width:4rem
+  }
+  
+  #icono-up-arrow{
+    position:absolute;
+    width: 3rem;
+    bottom: 4%;
+    left: 3%;
+    transition: .2s ease;
+  
+  }
+  
+  #icono-up-arrow:hover{
+    width:4rem
+  }
+  
+  #ribbon-container{
+    position:relative;
+    height: 200%;
+  }
+  
+  #icono-ribbon {
+    position: absolute;
+    width: 4rem;
+    left: 2%;
+    top: 0;
+  }
+  
+/* |||||| BOTÓN FLOTANTE ||||||||||| */
 
-}
 
-/* METIENDO MANOPLA ELIAS HASTA ACÁ*/
-/* METIENDO MANOPLA ELIAS HASTA ACÁ*/
+/* ELIAS HASTA ACÁ*/
+
+
+
+
 
 /* UTILIDADES */
 
@@ -137,7 +166,8 @@ h3 {
 
 .grid-container { 
     display:grid; 
-    grid-template-columns: 25% 25% 25%;
+    grid-template-columns: 20% 20% 20%;
+    /*grid-template-rows:15% 15% 15%; ;*/
     justify-content: center;
     padding-bottom: 2.5%;  
 }
@@ -158,6 +188,7 @@ h3 {
     width: 4rem;
 }
 
+
 button{
     font-size: 0.75rem;
     font-weight: bold;
@@ -174,7 +205,7 @@ button:hover {
 }
 
 #nuestrosPlanes {
-    width: 80%;
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -184,11 +215,14 @@ button:hover {
 
 #nuestrosPlanes div {
     padding: 5px 12px;
-    width: 30%;
+}
+
+#nuestrosPlanes h3 {
+    margin: 0;
 }
 
 #nuestrosPlanes .plan{
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     padding: 50px 0px;
     margin: 30px;
@@ -197,7 +231,7 @@ button:hover {
 
 
 #plan1{
-    background-color: var(--ppal-suave);
+    background-color:var(--ppal-suave);
 }
 #plan2{
     background-color: var(--ppal-medio);
@@ -214,7 +248,8 @@ button:hover {
     }
     .servicios {
         text-align: center;
-        grid-column:1 / span3;        
+        grid-column:1 / span3;
+        
     }
     .servicios h4{
         font-size: 20px;
@@ -222,6 +257,7 @@ button:hover {
 }
 
 @media(min-width:720px){
+
 
     #nuestrosPlanes {
         display: flex;
@@ -300,3 +336,20 @@ button:hover {
 
 }
 
+
+/* |||||||||||| ELIAS ||||||||||||| */
+/* ||||||||||| FOOTER ||||||||||||| */
+
+.site-footer {
+    background-color: var(--blanco);
+    height: 100px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px -2px 20px 0px rgba(0, 0, 0, 0.16), 0px -2px 20px 0px rgba(0, 0, 0, 0.23);
+    transition: all 300ms;
+    
+  }
+
+  #footer{
+    forced-color-adjust: value(--ppal-fuerte);
+    color:#444444
+  }
