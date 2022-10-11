@@ -59,6 +59,7 @@ h3 {
 }
 
 
+
 /* ELIAS DESDE ACÁ |||||||||| header |||||| */
 
 .site-header {
@@ -363,6 +364,7 @@ h3 {
     width: 100%;
     height: 300px;
     padding: 40px 0;
+    margin-top: 10px;
     background-color: rgb(110, 110, 110);
 
     display: flex;
@@ -408,10 +410,31 @@ h3 {
 /* EVENTOS */
 
 #eventos {
+    width: 25%;
+    height: 400px;
     display: flex;
-    justify-content: space-between;
-    margin: 20px 10%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px 10% 40px 10%;
 }
+
+.linea  {
+    border-bottom: solid 2px var(--texto);
+    box-shadow: 3px 3px 5px var(--contraste-fuerte);
+    width: 100%;
+}
+
+
+.evento img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    margin-right: 10px;
+}
+
+
 
 
 /* |||||||||||| ELIAS ||||||||||||| */
