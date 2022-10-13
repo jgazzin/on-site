@@ -3,8 +3,8 @@
     --blanco: #ffffff;
     --texto: #444444;
     --ppal-fuerte: #5E6472;
-    --ppal-medio: #AED9E0;
-    --ppal-suave: #B8F2E6;
+    --ppal-medio: #888e9e;
+    --ppal-suave: #a2a6ae;
     --contraste-suave: #FAF3DD;
     --contraste-fuerte: #FFA69E;
 
@@ -103,6 +103,10 @@ h3 {
     transition: all 300ms;
 }
 
+.nav a {
+    margin-left: 8px;
+}
+
 .site-header a:hover {
     text-decoration: none;
     color: #1F8AFF;
@@ -115,7 +119,9 @@ h3 {
 }
 
 .site-header__wrapper {
-    margin: 0 10%;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -224,19 +230,8 @@ h3 {
     top: 0;
 }
 
-/* |||||| BOTÓN FLOTANTE ||||||||||| */
 
-
-/* ELIAS HASTA ACÁ*/
-
-
-
-
-
-/* UTILIDADES */
-
-/* - FLOR - SERVICIOS & PLANES - FLOR - SERVICIOS & PLANES - FLOR - SERVICIOS & PLANES - FLOR - SERVICIOS & PLANES */
-
+/* imagen hero */
 #hero {
     position: relative;
 
@@ -245,17 +240,17 @@ h3 {
 
 #hero img:last-child {
     position: absolute;
-    top: 50px;
-    left: 45vw;
+    bottom: 55px;
+    left: 42vw;
 
-    width: 100px;
-    filter: brightness(0);
+    width: 150px;
+
 }
 
 
 #banner {
     width: 100%;
-    height: 400px;
+    height: calc(100vh - 120px);
     object-fit: cover;
 
 }
@@ -307,7 +302,7 @@ h3 {
 
 #nuestrosPlanes {
     width: 80%;
-    margin: auto;
+    margin: 20px auto;
 }
 
 #nuestrosPlanes {
@@ -333,7 +328,7 @@ h3 {
     background-position: center;
     background-size: cover;
     padding: 50px 0px;
-    margin: 30px;
+    margin: 10px;
     border-radius: 15px;
 }
 
@@ -346,7 +341,7 @@ h3 {
 }
 
 #plan3 {
-    background-color: var(--contraste-suave);
+    background-color: var(--ppal-suave);
 }
 
 #cotiza {
@@ -414,17 +409,6 @@ h3 {
         width: 30%;
     }
 
-    #plan1 {
-        background-color: var(--ppal-suave);
-    }
-
-    #plan2 {
-        background-color: var(--ppal-medio);
-    }
-
-    #plan3 {
-        background-color: var(--contraste-suave);
-    }
 
 }
 
@@ -457,11 +441,22 @@ h3 {
     filter: grayscale();
 }
 
+figure {
+    position: relative;
+}
+
 figcaption {
-    color: var(--blanco);
+    color: #cacaca;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    padding-top: 5px;
+
+    background-color: rgba(0, 0, 0, .3);
+    padding: 5px;
+    width: 100%;
+    
+
+    position: absolute;
+    bottom: 0;
 }
 
 
@@ -479,7 +474,7 @@ figcaption {
     }
 
     .imagen {
-        margin-bottom: 10px;
+        margin: 0 auto 10px auto;
         width: 90%;
         height: 30%;
     }
@@ -489,40 +484,52 @@ figcaption {
 
 /* EVENTOS */
 .contenedor {
-    /* ancho de contenido + centrado */
-    width: 760px;
-    display: flex;
-    justify-content: space-between;
     width: 80%;
     margin: 40px auto;
 
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 25px;
 }
-
 
 .evento {
-    width: 22%;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+.evento p {
+    border-left: 4px solid var(--contraste-fuerte);
+    padding-left: 10px;
 }
 .evento h3 {
-    height: 60px;
-
-}
-.linea {
-    border-bottom: solid 2px var(--texto);
-    box-shadow: 3px 3px 4px var(--contraste-fuerte);
-    width: 100%;
+    font-size: 20px;
+    letter-spacing: 3px;
 }
 
 .evento a {
     font-family: 'Roboto', sans-serif;
 }
 
-/*corregir tamaño de los circulos, 100% de evento*/
 .evento img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+
     object-fit: cover;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
+}
+
+@media (max-width:780px) {
+    .contenedor {
+        grid-template-columns: 50% 50%;
+    }
+    
+}
+
+@media (max-width: 420px) {
+    .contenedor {
+        grid-template-columns: 100%;
+    }
 }
 
 
@@ -539,9 +546,6 @@ figcaption {
 
 }
 
-.site-header__wrapper {
-    margin: 0 20%;
-}
 
 .fa-brands {
     color: #444444;
