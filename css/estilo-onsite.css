@@ -279,6 +279,7 @@ h3 {
     width: 4rem;
 }
 
+
 /* PLANES */
 #b-plan {
     font-size: 1rem;
@@ -318,12 +319,12 @@ h3 {
 
 #nuestrosPlanes #lista-plan {
     height: 30%;
-    padding: 3%;
     font-size: 20px;
     font-family: 'Roboto', cursive;
     font-size: 1.3rem;
     text-align:left;
     color: var(--blanco);
+    padding-top: 2%;
 
 }
 
@@ -402,7 +403,6 @@ h3 {
         justify-content: center;
     }
 
-
     #nuestrosPlanes {
         background-size: 100% 150px;
     }
@@ -411,7 +411,10 @@ h3 {
         padding: 5px 10px;
         width: 30%;
     }
-
+   
+    .iconosServ img:hover {
+        transform:scale(1.2)
+    }
 }
 
 /* GALERIA DE FOTOS - ESPACIOS */
