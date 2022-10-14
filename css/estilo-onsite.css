@@ -36,7 +36,7 @@ h3 {
     text-align: center;
     margin: 10px;
     font-family: 'Bebas Neue', cursive;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--texto);
     letter-spacing: 5px;
 }
@@ -82,8 +82,6 @@ h3 {
 
     cursor: pointer;
 }
-
-
 
 /* ELIAS DESDE ACÁ |||||||||| header |||||| */
 
@@ -230,13 +228,12 @@ h3 {
     top: 0;
 }
 
-
 /* imagen hero */
+
 #hero {
     position: relative;
 
 }
-
 
 #hero img:last-child {
     position: absolute;
@@ -247,7 +244,6 @@ h3 {
 
 }
 
-
 #banner {
     width: 100%;
     height: calc(100vh - 120px);
@@ -255,7 +251,7 @@ h3 {
 
 }
 
-
+/* SERVICIOS */
 
 .grid-container {
     display: grid;
@@ -283,7 +279,7 @@ h3 {
     width: 4rem;
 }
 
-
+/* PLANES */
 #b-plan {
     font-size: 1rem;
     font-weight: bold;
@@ -316,18 +312,26 @@ h3 {
 
 #nuestrosPlanes h3 {
     margin: 0;
+    color: var(--blanco);
+    font-size: 35px;
 }
 
-#nuestrosPlanes #p-plan {
-    height: 50%;
-    margin: 2% 5%;
-    font-size: 18px;
+#nuestrosPlanes #lista-plan {
+    height: 30%;
+    padding: 3%;
+    font-size: 20px;
+    font-family: 'Roboto', cursive;
+    font-size: 1.3rem;
+    text-align:left;
+    color: var(--blanco);
+
 }
 
 #nuestrosPlanes .plan {
     background-position: center;
     background-size: cover;
-    padding: 50px 0px;
+    height: 15%;
+    padding: 20px 0px;
     margin: 10px;
     border-radius: 15px;
 }
@@ -375,9 +379,9 @@ h3 {
     background-color: var(--contraste-fuerte);
 }
 
-@media (max-width:720px) {
+@media only screen and (max-width:650px) {
 
-    #nuestrosPlanes #p-plan {
+    #nuestrosPlanes #lista-plan {
         display: none;
     }
 
@@ -391,12 +395,11 @@ h3 {
     }
 }
 
-@media(min-width:720px) {
+@media(min-width:850px) {
 
     #nuestrosPlanes {
         display: flex;
         justify-content: center;
-        justify-content: 25%;
     }
 
 
@@ -405,16 +408,11 @@ h3 {
     }
 
     #nuestrosPlanes div {
-        padding: 5px 12px;
+        padding: 5px 10px;
         width: 30%;
     }
 
-
 }
-
-/* - FLOR - SERVICIOS & PLANES - FLOR - SERVICIOS & PLANES - FLOR - SERVICIOS & PLANES - FLOR - SERVICIOS & PLANES - FLOR - SERVICIOS & PLANES */
-
-
 
 /* GALERIA DE FOTOS - ESPACIOS */
 .galeria {
