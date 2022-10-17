@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</Form></title>
+    <link rel="stylesheet" href="estilo-onsite3.css">
+</head>
+<body>
+    <div id="containerContacto">
+        <div id="cabContacto">
+            <h2>Escribinos</h2>
+        </div>
+        <form id="formContacto">
+            <div class="form-control">
+                <label for="nombreyapellido">Nombre y Apellido</label>
+                <input id=nombreyapellido type="text"> 
+                <p></p>
+            </div>
+            <div class="form-control">
+                <label for="email">E-mail</label>
+                <input id=email type="email">
+                <p></p>
+            </div>
+            <div class="form-control">
+                <label for="telefono">Teléfono</label>
+                <input id=telefono type="tel">
+                <p></p>
+            </div>
+            <div class="form-control">
+                <label for="elegirplan">Quiero Info</label>
+                <select id=elegirplan> 
+                    <option value="0">Seleccione una opción</option>
+                    <option value="1">Plan Básico</option>
+                    <option value="2">Plan Premium</option>
+                    <option value="3">Plan Ilimitado</option> 
+                </select>
+                <p></p>
+            </div>
+            <div class="form-control">
+                <label for="msje">Dejanos tu consulta</label>
+                <textarea id="msje"></textarea>
+                <p></p>
+            </div>
+
+            <button id="b-form">Enviar</button>
+        </form>
+    </div>
+
+
+    <script src="validacion.js"></script>
+</body>
+</html>

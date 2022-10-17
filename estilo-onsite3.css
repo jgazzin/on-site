@@ -1,0 +1,97 @@
+/* FORMULARIO */
+
+#containerContacto {
+
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+    margin: 3% 3% 3%;
+    width: 400px;
+}
+
+#cabContacto {
+    background: #FFA69E;
+    color: white;
+    text-align: center;
+    padding: 1% 4%;
+}
+
+#formContacto {
+    padding: 3% 6%;
+}
+
+.form-control {
+    margin-bottom: 3%;
+    padding-bottom: 2%;
+    position: relative;
+    justify-content: center;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 2%;
+    font:weight 200px
+}
+.form-control input {
+    border: none;
+    background-color:beige;
+    font-family: inherit;
+    font-size: 15px;
+    padding: 2%;
+    width: 100%;
+}
+.form-control textarea {
+    border: none;
+    background-color:beige;
+    font-family: inherit;
+    font-size: 15px;
+    padding: 2%;
+    width: 100%;
+}
+.form-control select {
+    border: none;
+    background-color: #FFA69E;
+    font-family: inherit;
+    font-size: 15px;
+    padding: 2%;
+    width: 50%;
+    
+}
+.form-control, input:focus {
+    outline: none;
+}
+.form-control.ok input,
+.form-control.ok textarea,
+.form-control.ok select {
+    border:0.1px solid;
+    border-color: green;
+}
+
+.form-control.error input,
+.form-control.error textarea,
+.form-control.error select {
+    border:0.1px solid;
+    border-color: red;
+}
+
+.form-control p {
+    visibility: hidden;
+    position: absolute;
+    font-size: small;
+    font-weight: 500;
+    text-align: right;
+}
+.form-control.form-control.error p {
+    visibility: visible;
+    color: red;
+    margin-top: 0.5%;
+}
+#b-form {
+    background: #5E6472;
+    border: 1px solid white;
+    border-radius: 2px;
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 2%;
+    font-size: 20px;
+}
