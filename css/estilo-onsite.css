@@ -237,7 +237,7 @@ h2 {
 
 #hero {
     width: 100%;
-    height: calc(100vh - 120px - 30px);
+    height: calc(80vh - 120px - 30px);
     background-image: url(../img/front-cowork.jpg);
     background-position: center;
     background-size:cover;
