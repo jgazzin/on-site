@@ -52,23 +52,18 @@ h4 {
     }
 }
 
+h2 {
+    border: 2px solid var(--texto);
+    border-radius: 10px;
+    box-shadow: 5px 5px var(--texto);
+}
+
 .titulos {
     position: relative;
     margin: 40px 0;
+    padding: 0 10%;
 }
 
-.subrayado {
-
-    background: linear-gradient(90deg, #FFA69E, #ffffff);
-    height: 50px;
-    width:90%;
-
-    position: absolute;
-    left: 10%;
-    top: -10px;
-    z-index: -1;
-
-}
 
 .ancla {
     width: 48px;
@@ -78,7 +73,7 @@ h4 {
     
     position: absolute;
     left: 3%;
-    top: -9px;
+    top: 0px;
 
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -420,7 +415,7 @@ h4 {
 /* --------- EVENTOS --------------  */
 .contenedor {
     width: 80%;
-    margin: 40px auto;
+    margin: 60px auto;
 
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
