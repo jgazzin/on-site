@@ -15,7 +15,7 @@ font-family: 'Bebas Neue', cursive;
 font-family: 'Roboto', sans-serif;
 */
 
-/* GLOBALES */
+/* ------ GLOBALES -------*/
 
 * {
     margin: 0;
@@ -29,7 +29,7 @@ p {
 }
 
 
-/* TITULOS */
+/* -----  TITULOS ------- */
 h1,
 h2,
 h3,
@@ -42,7 +42,7 @@ h4 {
     letter-spacing: 5px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 780px) {
     h1,
     h2,
     h3,
@@ -95,7 +95,7 @@ h4 {
 }
 
 
-/* ELIAS DESDE ACÁ |||||||||| header |||||| */
+/* ----- header ------- */
 
 .site-header {
     background-color: var(--blanco);
@@ -161,7 +161,7 @@ h4 {
 
 }
 
-/* |||||| BOTÓN FLOTANTE ||||||||||| */
+/* ------ BOTÓN FLOTANTE ------ */
 
 /* #btn-volver {
     margin-top: 10%;
@@ -195,7 +195,7 @@ h4 {
 
 #botones-fixed {
     position: fixed;
-    bottom: 4%;
+    bottom: 60px;
     left: 3%;
 
 }
@@ -238,28 +238,35 @@ h4 {
     top: 0;
 }
 
-/* imagen hero */
+/* -------- BANNER HERO ---------- */
 
 #hero {
     width: 100%;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 120px - 30px);
     background-image: url(../img/front-cowork.jpg);
     background-position: center;
     background-size:cover;
 
     display: flex;
-    justify-content: center;
-    align-items:flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
 }
 
-#hero img:last-child {
+#hero h1 {
+    color: var(--blanco);
+    margin-bottom: 20px;
+}
+
+#hero img {
     width: 130px;
     height: 130px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 
-/* SERVICIOS */
+/* -------SERVICIOS------------ */
 .grid-container {
     display: grid;
     grid-template-columns: 25% 25% 25%;
@@ -285,13 +292,16 @@ h4 {
     width: 4rem;
 }
 
-/* PLANES */
-#b-plan {
-    color: var(--blanco);
-    font-size: 20px;
+/*------- PLANES ----------*/
+
+.plan {
+    min-height: 330px;
 }
 
 #b-plan {
+    color: var(--blanco);
+    font-size: 20px;
+
     font-size: 1rem;
     font-weight: bold;
     padding: 5px 10px;
@@ -406,17 +416,174 @@ h4 {
     }
 }
 
-/* GALERIA DE FOTOS - ESPACIOS */
+
+/* --------- EVENTOS --------------  */
+.contenedor {
+    width: 80%;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 25px;
+}
+
+.evento {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+.evento p {
+    border-left: 4px solid var(--contraste-fuerte);
+    padding-left: 10px;
+}
+.evento h3 {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.evento a {
+    font-family: 'Roboto', sans-serif;
+}
+
+.evento img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    object-fit: cover;
+    margin: 0 auto 20px auto;
+}
+
+@media (max-width:780px) {
+    .contenedor {
+        grid-template-columns: 50% 50%;
+    }
+    
+}
+
+@media (max-width: 420px) {
+    .contenedor {
+        grid-template-columns: 100%;
+    }
+}
+
+
+/*-----  FORMULARIO --------*/
+
+#contactanos {
+    display: flex;
+    justify-content: center;
+}
+
+#containerContacto {
+
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+    margin: 3% 3% 3%;
+    width: 600px;
+}
+
+#cabContacto {
+    background: #FFA69E;
+    color: white;
+    text-align: center;
+    padding: 1% 4%;
+}
+
+#formContacto {
+    padding: 3% 6%;
+}
+
+.form-control {
+    margin-bottom: 3%;
+    padding-bottom: 2%;
+    position: relative;
+    justify-content: center;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 2%;
+    font:weight 200px
+}
+.form-control input {
+    border: none;
+    background-color:beige;
+    font-family: inherit;
+    font-size: 15px;
+    padding: 2%;
+    width: 100%;
+}
+.form-control textarea {
+    border: none;
+    background-color:beige;
+    font-family: inherit;
+    font-size: 15px;
+    padding: 2%;
+    width: 100%;
+}
+.form-control select {
+    border: none;
+    background-color: #FFA69E;
+    font-family: inherit;
+    font-size: 15px;
+    padding: 2%;
+    width: 50%;
+    
+}
+.form-control, input:focus {
+    outline: none;
+}
+.form-control.ok input,
+.form-control.ok textarea,
+.form-control.ok select {
+    border:0.1px solid;
+    border-color: green;
+}
+
+.form-control.error input,
+.form-control.error textarea,
+.form-control.error select {
+    border:0.1px solid;
+    border-color: red;
+}
+
+.form-control p {
+    visibility: hidden;
+    position: absolute;
+    font-size: small;
+    font-weight: 500;
+    text-align: right;
+}
+.form-control.form-control.error p {
+    visibility: visible;
+    color: red;
+    margin-top: 0.5%;
+}
+#b-form {
+    background: #5E6472;
+    border: 1px solid white;
+    border-radius: 2px;
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 2%;
+    font-size: 20px;
+}
+
+
+/* ---- GALERIA  - ESPACIOS---- */
 .galeria {
     width: 100%;
     height: 300px;
-    padding: 40px 0;
+    padding: 40px 0 0 0;
     background-color: var(--ppal-fuerte);
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+
 
 .imagen {
     width: 30%;
@@ -472,60 +639,13 @@ figcaption {
 
 }
 
-/* EVENTOS */
-.contenedor {
-    width: 80%;
-    margin: 40px auto;
-
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    gap: 25px;
-}
-
-.evento {
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-}
-
-.evento p {
-    border-left: 4px solid var(--contraste-fuerte);
-    padding-left: 10px;
-}
-.evento h3 {
-    font-size: 20px;
-    letter-spacing: 3px;
-}
-
-.evento a {
-    font-family: 'Roboto', sans-serif;
-}
-
-.evento img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-
-    object-fit: cover;
-    margin: 0 auto 20px auto;
-}
-
-@media (max-width:780px) {
-    .contenedor {
-        grid-template-columns: 50% 50%;
-    }
-    
-}
-
-@media (max-width: 420px) {
-    .contenedor {
-        grid-template-columns: 100%;
-    }
-}
 
 
+/*--------  FOOTER ----------- */
 footer {
     box-shadow: 0px -2px 20px 0px rgba(0, 0, 0, 0.16);
     padding: 20px 10%;
+    margin-bottom: 30px;
 
     display: flex;
     justify-content: space-around;
@@ -546,14 +666,68 @@ footer {
     margin-left: 10px;
 }
 
-@media (max-width: 480px) {
+.grupo {
+    background-color: black;
+    width: 100%;
+    height: 30px;
+
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grupo p,
+.grupo h4 {
+    color: var(--blanco);
+    font-size: 80%;
+
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.grupo span {
+    color: var(--blanco);
+}
+
+.grupo p {
+    border-left: 2px solid var(--blanco);
+    padding: 0 10px;
+}
+
+@media (max-width: 580px) {
     footer {
         flex-direction: column;
         justify-content: center;
 
+        padding: 20px 0;
     }
 
     .redes {
         padding: 20px 0;
     }
+
+    .grupo {
+        height: auto;
+
+        flex-direction: column;
+        justify-content: center;
+
+        position: static;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .grupo p {
+        border: none;
+        font-size: 60%;
+    }
+
+    .grupo span {
+        display: none;
+    }
+
+    
 }
