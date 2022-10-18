@@ -35,27 +35,20 @@ h2,
 h3,
 h4 {
     text-align: center;
-    margin: 10px;
     font-family: 'Bebas Neue', cursive;
     font-size: 1.8rem;
     color: var(--texto);
     letter-spacing: 5px;
 }
 
-@media (max-width: 780px) {
-    h1,
-    h2,
-    h3,
-    h4 {
-        font-size: 1.2rem;
-        letter-spacing: 2px;
-    }
-}
 
 h2 {
     border: 2px solid var(--texto);
     border-radius: 10px;
     box-shadow: 5px 5px var(--texto);
+
+    padding: 5px 40px;
+    width: 100%;
 }
 
 .titulos {
@@ -87,6 +80,20 @@ h2 {
     transition: 300ms;
 
     cursor: pointer;
+}
+
+@media (max-width: 780px) {
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+
+    .ancla {
+        display: none;
+    }
 }
 
 
@@ -158,35 +165,6 @@ h2 {
 
 /* ------ BOTÓN FLOTANTE ------ */
 
-/* #btn-volver {
-    margin-top: 10%;
-}
-
-.table-confirmacion {
-    border-collapse: collapse;
-    border-spacing: 0;
-    margin: 50px 0;
-}
-
-.table-confirmacion td {
-    border: none;
-    font-size: 16px;
-    overflow: hidden;
-    padding: 10px 5px;
-    word-break: normal;
-}
-
-.table-confirmacion .table-confirmacion-zv4m {
-    text-align: left;
-    vertical-align: top;
-    font-weight: 600
-}
-
-.table-confirmacion .table-confirmacion-ofj5 {
-    text-align: right;
-    vertical-align: top
-} */
-
 
 #botones-fixed {
     position: fixed;
@@ -237,7 +215,7 @@ h2 {
 
 #hero {
     width: 100%;
-    height: calc(80vh - 120px - 30px);
+    height: calc(100vh - 120px - 30px);
     background-image: url(../img/front-cowork.jpg);
     background-position: center;
     background-size:cover;
@@ -257,7 +235,7 @@ h2 {
 #hero img {
     width: 130px;
     height: 130px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 
@@ -446,7 +424,7 @@ h2 {
     border-radius: 50%;
 
     object-fit: cover;
-    margin: 0 auto 20px auto;
+    margin: 10px auto 20px auto;
 }
 
 @media (max-width:780px) {
@@ -467,7 +445,29 @@ h2 {
 
 #contactanos {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+
+    margin: 0 10%;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 40px;
+}
+
+.map div {
+    text-align: center;
+}
+
+.map iframe {
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+
+    height: 300px;
 }
 
 #containerContacto {
@@ -475,7 +475,7 @@ h2 {
     background-color: white;
     border-radius: 3px;
     box-shadow: 3px 3px 3px rgb(0, 0, 0);
-    margin: 3% 3% 3%;
+    margin-right: 40px;
     width: 600px;
 }
 
@@ -566,7 +566,18 @@ h2 {
     font-size: 20px;
 }
 
+@media (max-width: 760px) {
+    #contactanos {
+        flex-direction: column;
+        justify-content: center;
+    
+        margin: 0 10%;
+    }
 
+    #containerContacto {
+        width: auto;
+    }
+}
 /* ---- GALERIA  - ESPACIOS---- */
 .galeria {
     width: 100%;
