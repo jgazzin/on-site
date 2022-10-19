@@ -32,7 +32,7 @@
 
     <header class="site-header">
         <div class="site-header__wrapper wrapper">
-            <a href="index.html" class="brand"><img src="img/LOGO_WEBSITE.png" width="50px" alt="brand" /></a>
+            <a href="index.html" class="brand"><img class="animacion" src="img/LOGO_WEBSITE.png" width="50" alt="brand" /></a>
             <nav class="nav">
                 <a href="#sevicios">SERVICIOS</a>
                 <a href="#planes">PLANES</a>
@@ -148,7 +148,7 @@
                     <h3> ILIMITADO </h3>
                     <ul style="list-style: none;" id="lista-plan">
                         <li id="lista-plan"> ✔ Cinco días por semana</li>
-                        <li id="lista-plan"> ✔ Impresiones en blanco y negro ilimitadas</li>
+                        <li id="lista-plan"> ✔ Impresiones ilimitadas</li>
                         <li id="lista-plan"> ✔ Estacionamiento</li>
                         <li id="lista-plan"> ✔ Domicilio Comercial </li>
                     </ul>
@@ -203,7 +203,7 @@
                 <p>
                 <h3>Publicá tu evento</h3>
                 <img src="img/evento-tuevento.png" alt="imagen evento">
-                <a href="mailto:j.gazzin@gmail.com?Subject=Publicación evento">Contactar por e-mail</a>
+                <a href="#contactanos">Contactar</a>
             </div>
 
         </section>
@@ -220,25 +220,25 @@
                 <div id="cabContacto">
                     <h4>Escribinos</h4>
                 </div>
-                <form id="formContacto">
+                <form id="formContacto" action="https://formsubmit.co/j.gazzin@gmail.com" method="POST">
                     <div class="form-control">
                         <label for="nombreyapellido">Nombre y Apellido</label>
-                        <input id=nombreyapellido type="text">
+                        <input id=nombreyapellido type="text" name="Nombre y Apellido">
                         <p></p>
                     </div>
                     <div class="form-control">
                         <label for="email">E-mail</label>
-                        <input id=email type="email">
+                        <input id=email type="email" name="e-mail">
                         <p></p>
                     </div>
                     <div class="form-control">
                         <label for="telefono">Teléfono</label>
-                        <input id=telefono type="tel">
+                        <input id=telefono type="tel" name="Teléfono">
                         <p></p>
                     </div>
                     <div class="form-control">
                         <label for="elegirplan">Quiero Info</label>
-                        <select id=elegirplan>
+                        <select id=elegirplan name="modo de contacto">
                             <option value="0">Seleccione una opción</option>
                             <option value="1">Plan Básico</option>
                             <option value="2">Plan Premium</option>
@@ -248,11 +248,11 @@
                     </div>
                     <div class="form-control">
                         <label for="msje">Dejanos tu consulta</label>
-                        <textarea id="msje"></textarea>
+                        <textarea id="msje" name="Mensaje"></textarea>
                         <p></p>
                     </div>
 
-                    <button id="b-form">Enviar</button>
+                    <button id="b-form" type="submit" >Enviar</button>
                 </form>
             </div>
 
