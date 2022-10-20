@@ -1,4 +1,13 @@
+const listUsers= async ()=> {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    const users= await response.json();
+    
+    users.forEach((user, formulario) => {
+    console.log(user);}) 
+} ;
+
 window.addEventListener('load', ()=> {
+    listUsers();
     const form = document.getElementById('formContacto')
     const nombreyapellido = document.getElementById('nombreyapellido')
     const email = document.getElementById('email')
@@ -61,6 +70,7 @@ window.addEventListener('load', ()=> {
             validaOk(msje)
         }  
     }
+
 
     const validaError = (input, mensaje, select) => {
         const formControl = input.parentElement
