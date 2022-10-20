@@ -37,7 +37,7 @@ window.addEventListener('load', ()=> {
         // VALIDACIÓN TELEFONO //
         if(!telefonoValor) {
             validaError(telefono, 'Campo vacío')
-        } else if(telefonoValor.length <= 10) {
+        } else if(telefonoValor.length < 10) {
             validaError(telefono, 'Ingresá un número telefónico')
         } else if(!telefonoValor.match(er)) {
             validaError(telefono, 'El teléfono ingresado no es válido')
@@ -77,6 +77,5 @@ window.addEventListener('load', ()=> {
     const validaEmail = (email) => {
         return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email); 
     }
-    const er = /^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/g
-    // /^\(?(\d{3})\)?[-]?(\d{3})[-]?(\d{4})$/
+    const er =  /^\(?(\d{3})\)?[-]?(\d{3})[-]?(\d{4})$/
 })
