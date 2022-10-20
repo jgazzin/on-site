@@ -363,8 +363,8 @@ h2 {
 #cotiza {
     background-color: var(--ppal-fuerte);
     text-align: center;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
+    padding: 3%;
+
 }
 
 #cotiza h3 {
@@ -463,13 +463,16 @@ h2 {
 @media (max-width:850px) {
     .contenedor {
         grid-template-columns: 50% 50%;
+
     }
     
 }
 
 @media (max-width: 450px) {
     .contenedor {
-        grid-template-columns: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
