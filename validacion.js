@@ -17,7 +17,8 @@ window.addEventListener('load', ()=> {
 
    form.addEventListener('submit', (e) => {
         e.preventDefault()
-        validaCampos()
+        if ( validaCampos() ) {
+            form.submit() }
     }) 
 
     const validaCampos = () => {
