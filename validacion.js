@@ -46,10 +46,8 @@ window.addEventListener('load', ()=> {
         // VALIDACIÓN TELEFONO //
         if(!telefonoValor) {
             validaError(telefono, 'Campo vacío')
-        } else if(telefonoValor.length < 10) {
+        } else if (telefonoValor.length < 10) {
             validaError(telefono, 'Ingresá un número telefónico')
-        } else if(!telefonoValor.match(er)) {
-            validaError(telefono, 'El teléfono ingresado no es válido')
         } else { 
             validaOk(telefono)
         }
